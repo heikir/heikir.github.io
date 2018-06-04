@@ -30,6 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .landing-section {
@@ -49,6 +50,17 @@
   font-size: 1.4em;
   font-family: "Bryant";
 }
+
+.social-icons {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icon {
+  padding: 0.4em;
+}
+
 h1 {
   font-weight: normal;
 }
