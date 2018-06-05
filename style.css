@@ -61,6 +61,14 @@
   padding: 0.4em;
 }
 
+.social-icon svg {
+  color: #4f1f33;
+}
+
+.social-icon svg:hover {
+  color: #ea126c;
+}
+
 h1 {
   font-weight: normal;
 }
