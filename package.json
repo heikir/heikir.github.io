@@ -1,0 +1,25 @@
+{
+  "name": "heikir",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heikir/heikir.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heikir/heikir.github.io/issues"
+  },
+  "homepage": "https://github.com/heikir/heikir.github.io#readme",
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
