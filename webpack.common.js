@@ -1,24 +1,19 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    app: "./src/index.js"
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist")
   },
-  plugins: [
-    new CleanWebpackPlugin(["dist/*"]),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html"),
-      filename: path.resolve(__dirname, "index.html")
-    })
-  ],
+  plugins: [new CleanWebpackPlugin(["dist/*"])],
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.s(a|c)ss$/,
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {

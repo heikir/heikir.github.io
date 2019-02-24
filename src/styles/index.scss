@@ -1,61 +1,6 @@
-@font-face {
-  font-family: "Bryant";
-  src: url("../fonts/BryantPro-Regular.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
+@charset "utf-8";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+@import "bulma/sass/layout/_all.sass";
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.landing-section {
-  height: 100vh;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
-
-.greeting {
-  text-align: center;
-  line-height: 2.8em;
-  font-size: 1.4em;
-  font-family: "Bryant";
-}
-
-.social-icons {
-  font-size: 2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.social-icon {
-  padding: 0.4em;
-}
-
-.social-icon svg {
-  color: #4f1f33;
-}
-
-.social-icon svg:hover {
-  color: #ea126c;
-}
-
-h1 {
-  font-weight: normal;
-}
-
-.portrait {
-  text-align: center;
-}
-
-.portrait img {
-  max-height: 30em;
-}
+@import "./custom.scss";
